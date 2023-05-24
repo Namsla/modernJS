@@ -1,35 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+//statement is a code which will not provide you the value
+//Eg. const myCountry="nepal"
+//How to verify it has value or not, use console log.
+//expression will provide you value
+//Inside JS(If you want to write JS expression) ->use interolation
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  //write your js here
+  const number = 10;
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div>{number}</div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
+// we write console log when we want to see value in output terminal.
+//writing statement in the console log gives error because only espression goes in the consolge log.
+// think whether thinks in the curly brack will give your number or value or not{}
+//that will help you wheter things are statement or an expression.
